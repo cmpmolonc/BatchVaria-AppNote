@@ -1,7 +1,7 @@
-# BatchVaria: TCGA-BRCA application example
+# BatchVaria: variance-based evaluation of batch correction with provenance tracking
 
-Code that reproduces the TCGA-BRCA example in the BatchVaria application
-note: every number in the text and Figure 1. It downloads TCGA breast
+Code to reproduce analysis within BatchVaria application
+note (https://doi.org/10.64898/2026.05.07.721996).  Every number in the text and Figure 1 can be recreated here. It downloads TCGA breast
 cancer RNA-seq data, applies four batch corrections, and profiles the
 variance of every resulting assay with BatchVaria.
 
