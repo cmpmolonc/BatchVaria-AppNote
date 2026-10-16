@@ -126,8 +126,6 @@ add(
 
 ## Data source and sample flow.
 
-release <- dataSource$value[dataSource$field == "gdc_data_release"]
-
 add(
     "## Dataset provenance",
     "",
@@ -140,14 +138,6 @@ add(
     mdTable(sampleFlow),
     ""
 )
-
-if (is.na(release) || !nzchar(release)) {
-    add(
-        paste0("The GDC data release is not recorded; data retrieved on ",
-               dataSource$value[dataSource$field == "retrieved"], "."),
-        ""
-    )
-}
 
 ## ---- Corrections --------------------------------------------------------
 

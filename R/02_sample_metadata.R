@@ -155,15 +155,14 @@ writeTable(
 
 ## ---- Provenance ---------------------------------------------------------
 
-## Data source. The GDC data release cannot be recovered by the pipeline and
-## is left NA; the retrieval date is recorded.
+## Data source.
 writeTable(
     data.frame(
         field = c(
             "project", "data_category", "data_type", "workflow_type",
             "sample_type_code", "batch_variable", "batch_source",
             "biological_variable", "biological_source",
-            "retrieved", "gdc_data_release"
+            "retrieved"
         ),
         value = c(
             CONFIG$project,
@@ -175,8 +174,7 @@ writeTable(
             "RNA-seq aliquot barcode (characters 22-25), checked against GDC Biospecimen Supplement (BCR Biotab)",
             CONFIG$bioVar,
             "TCGAbiolinks colData; PAM50 calls from Berger et al. 2018 (Cancer Cell)",
-            format(file.mtime(FILES$seRaw), "%Y-%m-%d"),
-            NA_character_
+            format(file.mtime(FILES$seRaw), "%Y-%m-%d")
         ),
         stringsAsFactors = FALSE
     ),

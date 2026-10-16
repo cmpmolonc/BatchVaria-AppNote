@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript it accompanies."
+title: "BatchVaria: TCGA-BRCA application example"
+type: software
+license: MIT
+authors:
+  - family-names: Moir
+    given-names: Nicholas
+    orcid: "https://orcid.org/0000-0001-6957-932X"
+  - family-names: Sherwood
+    given-names: Kitty
+  - family-names: Simpson
+    given-names: T. Ian
+preferred-citation:
+  type: article
+  title: "BatchVaria: variance-based evaluation of batch correction with provenance tracking"
+  authors:
+    - family-names: Moir
+      given-names: Nicholas
+      orcid: "https://orcid.org/0000-0001-6957-932X"
+    - family-names: Sherwood
+      given-names: Kitty
+    - family-names: Simpson
+      given-names: T. Ian
+  journal: bioRxiv
+  year: 2026
+  doi: 10.64898/2026.05.07.721996
+  url: "https://doi.org/10.64898/2026.05.07.721996"
